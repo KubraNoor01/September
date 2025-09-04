@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fbfc;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background-color: #f1f5f9;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 18px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      font-weight: bold;
+    }
+
+    /* Container for cards */
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #f1f5f9;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Profile Card */
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .profile h2 {
+      margin: 5px 0;
+      font-size: 20px;
+    }
+
+    .profile p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* Weather Card */
+    .weather h3 {
+      margin-bottom: 10px;
+    }
+    .weather .temp {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .weather .condition {
+      margin-top: 5px;
+      color: #555;
+    }
+
+    /* Planner */
+    .planner label {
+      display: block;
+      margin: 8px 0;
+    }
+
+    /* Gallery */
+    .gallery img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      margin-right: 8px;
+    }
+
+    .gallery {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#" class="active">Dashboard</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+
+    <!-- Profile -->
+    <div class="card profile">
+      <img src="1 .jpg" alt="Profile Picture">
+      <h2>John Doe</h2>
+      <p>Web Developer</p>
+    </div>
+
+    <!-- Weather -->
+    <div class="card weather">
+      <h3>Weather</h3>
+      <div class="temp">72°</div>
+      <div class="condition">Sunny ☀️</div>
+    </div>
+
+    <!-- Daily Planner -->
+    <div class="card planner">
+      <h3>Daily Planner</h3>
+      <label><input type="checkbox"> Breakfast</label>
+      <label><input type="checkbox"> Meeting with John</label>
+      <label><input type="checkbox"> Read Emails</label>
+      <label><input type="checkbox"> Workout</label>
+    </div>
+
+    <!-- Quote -->
+    <div class="card">
+      <h3>Quote of the Day</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="card gallery">
+      <h3>Mini Gallery</h3>
+      <img src="https://via.placeholder.com/60" alt="Gallery Image">
+      <img src="https://via.placeholder.com/60" alt="Gallery Image">
+      <img src="https://via.placeholder.com/60" alt="Gallery Image">
+    </div>
+
+  </div>
+
+</body>
+</html>
