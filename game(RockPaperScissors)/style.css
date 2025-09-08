@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #1e0038, #4a0072, #7a1cac);
+    color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+h1 {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Choices container */
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+/* Choice buttons */
+.choice {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 0 25px rgba(255,255,255,0.7);
+}
+
+/* If using images */
+.choice img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* If using emoji instead of images */
+.choice span {
+    font-size: 5rem;
+}
+
+/* Scoreboard */
+.score-board {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.score {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1rem 2.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.score:hover {
+    transform: scale(1.05);
+}
+
+/* Result box */
+#result {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+#msg {
+    display: inline-block;
+    background: rgba(0,0,0,0.5);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#msg:active {
+    transform: scale(1.05);
+}
